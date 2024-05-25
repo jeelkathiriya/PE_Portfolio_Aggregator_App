@@ -1,0 +1,121 @@
+// Dark theme variables
+$background-color: #121212;
+$text-color: #ffffff;
+$border-color: #44475B;
+
+// Dark theme styles
+body.dark {
+    --background-color: #{$background-color};
+    --text-color: #{$text-color};
+    --border-color: #{$border-color};
+    .header{
+        svg,
+        svg path {
+            fill: var(--text-color);
+        }
+    }
+    .header, input,
+    input::placeholder {
+        background-color: var(--background-color);
+        color: var(--text-color);
+        border-color: var(--border-color);
+    }
+    .announcement-bar{
+        border-color: var(--border-color);
+        background-color: var(--background-color);
+    }
+
+    .main-content,
+    .dropdown-menu.show,
+    .dropdown-item,   {
+        background-color: var(--background-color);
+        color: var(--text-color);
+    }
+    .list-group {
+        .list-group-item, h6, span, p{
+            background-color: var(--background-color);
+            color: var(--text-color);
+            border-color: var(--border-color);
+        }
+
+    }
+
+    .dropdown-item:hover {
+        background-color: var(--text-color);
+        color: var(--background-color);
+    }
+
+    .card{
+        background-color: #1B1B1B;
+        color: var(--text-color);
+        border-color:#44475B;
+    }
+    .db-header{
+        h5{
+            color: var(--text-color);
+        }
+    }
+    .db-card-list{
+        .logo{
+            padding: 11px 17px 11px 16px;
+        }
+        .title{
+            color: var(--text-color);
+        }
+        .price{
+            .main-price{color: var(--text-color);}
+        }
+
+    }
+    .table, .table>:not(caption)>*>* {
+        background-color: var(--background-color);
+        color: var(--text-color);
+        border-color: var(--border-color);
+    }
+    .breadcrumb{color: var(--text-color);}
+    .com-details{
+        .logo{
+            padding: 11px 17px 11px 16px;
+        }
+        .com-name{
+            color: var(--text-color);
+        }
+        .com-price{
+
+            .main-price{color: var(--text-color);}
+
+        }
+    }
+    .nav-tabs {
+        .nav-link{
+            color: var(--text-color);
+            &.active{color: #0ABB92; }
+        }
+
+    }
+    .overview-title{
+        color: var(--text-color);
+    }
+    .performance{
+        .up-title{
+            color: var(--text-color);}
+        .up-price{
+            color: var(--text-color);
+        }
+    }
+
+    .btn-secondary{
+        color: var(--text-color);
+        border-color: var(--border-color);
+        svg, path{
+            fill: var(--text-color);
+        }
+
+        &:hover, &:active{
+            color: var(--text-color);
+            border-color: var(--border-color);
+            background-color: transparent!important;
+        }
+    }
+
+}

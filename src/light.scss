@@ -1,0 +1,29 @@
+// Light theme variables
+$background-color-light: #ffffff;
+$text-color-light: #44475B;
+
+// Light theme styles
+body.light {
+    --background-color: #{$background-color-light};
+    --text-color: #{$text-color-light};
+
+    .header,
+    .main-content {
+        background-color: var(--background-color);
+        color: var(--text-color);
+    }
+    .header{
+        svg,
+        svg path {
+            fill: #44475B;
+        }
+    }
+    .dropdown-item:hover {
+        background-color: var(--text-color);
+        color: var(--background-color);
+    }
+
+    .dropdown-item {
+        color: var(--text-color);
+    }
+}
